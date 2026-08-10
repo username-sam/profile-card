@@ -9,8 +9,6 @@ btn.addEventListener('click',function (e) {
 })
 
 contact.addEventListener('click',function (e) {
-  conInfo.classList.toggle('show');
-  
-  
+  conInfo.classList.add('show');  
   container.style.animationName = 'fadeIn'
 })
