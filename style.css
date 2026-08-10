@@ -1,5 +1,6 @@
 body{
   background-image: url("images.jpeg");
+  background-size: cover;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -15,6 +16,64 @@ body{
   flex-direction: column ;
   align-items: center;
   justify-content: center;
+  z-index: 10;
+  position: relative;
+  animation: 0.5s ease forwards;
+}
+
+.contact-info{
+  height: 390px;
+  width: 310px;
+  background-color: transparent;
+  box-shadow: -2px -2px 3px #779D86;
+  display: none;
+  position: absolute;
+  z-index: 50;
+  border-radius: 10px;
+  
+}
+
+@keyframes fadeIn{
+  0%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 0.8;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  80%{
+    opacity: 0.2;
+  }
+  100%{
+    opacity: 0;
+  }
+  
+}
+
+.text{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #8FDCE5;
+}
+
+.text p{
+  font-size: 25px;
+  font-weight: bolder;
+}
+.less{
+  margin-top: 0px;
+}
+
+.contact-info.show{
+  display: block;
+  z-index: 4;
+  
 }
 
 .profile-info{
